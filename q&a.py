@@ -1,7 +1,7 @@
 #### Installing required module
 # API Token key
 import os 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 
 # Importing the modules.
