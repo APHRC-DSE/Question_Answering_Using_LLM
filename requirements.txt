@@ -1,0 +1,8 @@
+Chroma
+openai
+TextLoader
+PyPDFLoader
+langchain 
+CharacterTextSplitter
+ConversationalRetrievalChain
+RecursiveCharacterTextSplitter

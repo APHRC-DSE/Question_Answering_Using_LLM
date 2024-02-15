@@ -14,24 +14,11 @@ async def ping():
 async def section(request: Request):
 
     data = await request.json()
-
-    with open("shared_variable.pickle", "wb") as f: 
-        pickle.dump(data, f) 
-
-    from summarize import summarize
-    summary = summarize()
+    from question_answer import answer
+    answer = answer(data["Question"])
 
 
-    return {"summary": summary}
+    return {"Answer": answer}
 
-
-
-# @app.post("/section/summarize")
-# async def section(request: Request):
-
-#     from summarize import summarize
-#     summary = summarize()
-
-#     return {"summary": summary}
 
 
